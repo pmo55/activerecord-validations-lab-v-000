@@ -8,6 +8,6 @@ class Post < ActiveRecord::Base
   CLICKBAIT = [/won't believe/i, /secret/i, /guess/i, /top [0-9]*/i]
   
   def clickbait?
-    
+    if CLICKBAIT.none? 
   end
 end
