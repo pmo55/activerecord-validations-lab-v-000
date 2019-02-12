@@ -5,5 +5,5 @@ class Post < ActiveRecord::Base
   validates :category, inclusion: {in: %w(Fiction Non Fiction)}
   validate :clickbait?
   
-  CLICKBAIT = [/won't believe/i,/secret/i,/guess/i, //i]
+  CLICKBAIT = [/won't believe/i,/secret/i,/guess/i, /top/i]
 end
